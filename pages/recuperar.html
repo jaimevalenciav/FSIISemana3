@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    
+    <title>JVV Oficinas</title>
+</head>
+<body>
+    <header>
+        <div class="titulo-header"><img class="logo-header" src="../assets/logo.jpeg" alt="" srcset="">JVV Office CoWork</div>
+    </header>
+    <div class="wrapper">
+        
+            <nav class="main-nav">
+                <ul class="menu">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../pages/oficinas.html">Oficinas</a></li>
+                    <li><a href="../pages/salas.html">Salas Reuniones</a></li>
+                    <li><a href="../pages/acceso.html">Acceso Clientes</a></li>
+                </ul>
+            </nav>    
+    </nav>
+
+    <div class="container">
+        <div class="row justify-content-center mt-3">
+            <div class="col-12 col-md-6">
+                <div class="card shadow-lg rounded-4">
+                    <div class="card-body p-4">
+                        <h3 class="card-title text-center mb-4">Recuperar Contraseña</h3>
+                        <form id="recuperarClave" action="">
+                            <div class="mb-3">
+                                <label for="emailInput" class="form-label">E-mail</label>
+                                <input type="email" class="form-control" id="emailInput" aria-describedby="emailInput" placeholder="emai@dominio.com" required>
+                                <div class="invalid-feedback">
+                                    Se requiere un email.
+                                </div>                                 
+                            </div>
+                            <div class="mb-3">
+                                <label for="passInput" class="form-label">Nueva Password</label>
+                                <input type="password" class="form-control" id="passInput" aria-describedby="passInput" required>
+                                <div class="invalid-feedback">
+                                    Se requiere un email.
+                                </div> 
+                            </div>
+                            <div class="mb-3">
+                                <label for="newPassInput" class="form-label">Repita Password</label>
+                                <input type="password" class="form-control" id="newPassInput" aria-describedby="newPassInput" required>
+                                <div class="invalid-feedback">
+                                    Se requiere un email.
+                                </div> 
+                            </div>
+                            <div class="d-grid gap-2"> <button type="button" class="btn btn-danger" id="cambiaPasswordBtn">Cambiar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Umbrela Game Store. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank">Facebook</a>
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <script src="../js/validaPassword.js"></script>
+</body>
+
+</html>
