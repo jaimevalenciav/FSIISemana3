@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 isValid = false;
             }
 
-            // --- Validación de la Nueva Contraseña ---
+            
             if (password === '') {
                 passInput.classList.add('is-invalid');
                 passInput.nextElementSibling.textContent = 'La nueva contraseña es obligatoria.';
